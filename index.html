@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+    <link rel="shortcut icon" href="./imagens/coroa.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="./imagens/cinderela.gif" alt="">
+        </div>
+        <div class="right">
+            <div class="card" id="card">
+                <h1>Confirmar presença</h1>
+                <form id="form" action="https://formsubmit.co/graciela-245@hotmail.com" method="POST"
+                    onsubmit="return checkInputUsername()">
+                    <div class=" form-content">
+                        <label for="username">Nome do convidado</label>
+                        <input type="text" id="username" name="username">
+
+                        <a>"Aqui vai a mensagem de erro"</a>
+
+                    </div>
+                    <div class="box">
+                        <label for="confirmacao">Você irá ao evento?</label>
+                        <input type="radio" id="evento-sim" name="confirmacao" value="Sim">Sim
+                        <input type="radio" id="evento-nao" name="confirmacao" value="Não">Não
+                        <input type="radio" id="evento-talvez" name="confirmacao" value="Talvez">Talvez
+
+                    </div>
+                    <div class="box">
+                        <label for="select">Quantas Crianças?</label>
+                        <select name="numero_criancas" id="numero_criancas">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                    </div>
+                    <a href="pag-1.html"><button onclick="validarConfirmacao()" type="submit" class="btn"
+                            name="confirmar">Confirmar</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src=" js/script.js" defer></script>
+</body>
+
+
+</html>

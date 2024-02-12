@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans:wght@400;600 & display=swap');
+
+ * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color:#3771C9 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.left > img {
+  width: 23vw;
+  box-sizing: border-box;
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #7bb5e0;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.192);
+}
+
+.card > h1 {
+    color: #3C5A9F;
+    padding-bottom: 10px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.form-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #3C5A9F;
+    font-size: 12pt;
+}
+
+.form-content > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.192);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-content > a{
+    visibility: hidden;
+}
+
+.box {
+    padding: 15px;
+    color: #3C5A9F;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+.form-content > label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.btn {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    width: 40%;
+    padding: 10px 0px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    background: #3771C9;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.322);
+}
+
+@media only screen and (max-width: 950px) {
+    .card {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+    .left > h1 {
+        display: none;
+    }
+    .left > img {
+        width: 320px;
+        height: 320px;
+    }
+    .left {
+        width: 100%;
+        height: auto;
+    }
+    .right {
+        width: 100%;
+        height: auto;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+.form-content.error input{
+    border: 1px solid #ff3b25;
+}
+
+.form-content.error a{
+    color: #ff3b25;
+    padding: 5px;
+    visibility: visible;
+}
